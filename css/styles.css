@@ -66,6 +66,11 @@ footer a:hover {
     -webkit-backdrop-filter: blur(3px);
   }
 
+  .navbar.menu-active {
+    background-color: rgba(45, 45, 45, 0.8);
+    transition: background-color 0.3s ease;
+  }
+
   .burger-toggle {
     display: block;
     transition: transform 0.3s ease, opacity 0.3s ease;
