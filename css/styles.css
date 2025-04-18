@@ -47,12 +47,7 @@ main {
   align-items: baseline;
 }
 
-main img {
-  width: 6em;
-  height: auto;
-  display: block;
-  filter: invert(1);
-}
+
 
 .container {
   width: 90%;
@@ -69,8 +64,25 @@ main img {
 
 .container:hover {
   transform: scale(1.05);
+  background-color: var(--chalk-white);
+  color: var(--chalk-gray);
   border-radius: 10px;
   transition: 0.2s linear;
+
+  img {
+    filter: invert(0);
+  }
+
+  .btn {
+    background-color: gold;
+  }
+}
+
+.container img {
+  width: 6em;
+  height: auto;
+  display: block;
+  filter: invert(1);
 }
 
 .container h2 {
