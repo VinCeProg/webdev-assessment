@@ -1,0 +1,86 @@
+:root {
+  --chalk-white: #FFFAE3;
+  --chalk-gray: #2d2d2d;
+}
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 30px;
+  align-items: baseline;
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: var(--chalk-white);
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container:hover {
+  transform: scale(1.05);
+  background-color: rgba(45, 45, 45, 0.1);
+  backdrop-filter: blur(3px);
+  
+  color: var(--chalk-white);
+  border-radius: 10px;
+  transition: 0.2s linear;
+}
+
+.container img {
+  width: 6em;
+  height: auto;
+  display: block;
+  filter: invert(1);
+}
+
+.container h2 {
+  font-family: "Pangolin", cursive;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.container p {
+  font-family: "Pangolin", cursive;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+.container .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Pangolin", cursive;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #FFFAE3;
+  color: #2D2D2D;
+  border-radius: 50em;
+  width: 85%;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.container .btn:hover {
+  font-size: 1.12em;
+  width: 90%;
+  transform: scale(1.05);
+  background-color: gold;
+  transition: 0.5s ease;
+}
+
+.container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
+}
