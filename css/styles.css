@@ -96,17 +96,26 @@ main img {
   font-weight: bold;
   background-color: #FFFAE3;
   color: #2D2D2D;
+  border-radius: 50em;
   width: 85%;
   height: 50px;
-  margin: 10px 0 ;
-  text-decoration: none;
-  border-radius: 50em;
+  margin: 10px 0;
 }
 
 .container .btn:hover {
+  font-size: 1.12em;
+  width: 90%;
   transform: scale(1.05);
   background-color: gold;
   transition: 0.5s ease;
+}
+
+.container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  width: 100%;
 }
 
 footer {
