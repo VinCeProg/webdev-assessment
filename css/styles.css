@@ -64,18 +64,10 @@ main {
 
 .container:hover {
   transform: scale(1.05);
-  background-color: var(--chalk-white);
-  color: var(--chalk-gray);
+  background-color: var(--chalk-gray);
+  color: var(--chalk-white);
   border-radius: 10px;
   transition: 0.2s linear;
-
-  img {
-    filter: invert(0);
-  }
-
-  .btn {
-    background-color: gold;
-  }
 }
 
 .container img {
@@ -151,7 +143,7 @@ footer a:hover {
   .navbar {
     height: auto;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--chalk-gray);
   }
 
   .burger-toggle {
@@ -174,7 +166,6 @@ footer a:hover {
 
   .menu.active {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.1);
   }
 
   .menu li {
