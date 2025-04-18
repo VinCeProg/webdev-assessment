@@ -36,6 +36,7 @@ header {
 .hero h1 {
   font-family: "Rock Salt", cursive;
   font-size: 3em;
+  line-height: 1.5;
   width: 80%;
 }
 
