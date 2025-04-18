@@ -1,0 +1,78 @@
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  height: 8vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar .logo {
+  width: 2.6em;
+}
+
+.navbar h1 {
+  margin: 0;
+  padding: 5px;
+  font-family: "Pangolin", cursive;
+  font-weight: 1200;
+  font-size: 2.05em;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.menu a:hover {
+  color: gold;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.navbar li {
+  margin: 0 20px;
+  padding: 2px;
+}
+
+.burger-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 3.5px;
+  right: 10px;
+  z-index: 10;
+}
