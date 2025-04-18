@@ -123,6 +123,11 @@ footer a{
   color: white;
 }
 
+footer a:hover {
+  color: gold;
+  transition: 0.3s ease;
+}
+
 /* Responsive Menu */
 @media (max-width: 600px) {
   .navbar {
