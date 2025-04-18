@@ -61,7 +61,9 @@ footer a:hover {
   .navbar {
     height: auto;
     flex-direction: column;
-    background-color: var(--chalk-gray);
+    background-color: rgba(45, 45, 45, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
   }
 
   .burger-toggle {
