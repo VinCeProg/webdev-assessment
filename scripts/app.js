@@ -1,8 +1,15 @@
-// Select the menu toggle button and the menu
+// selects the menu toggle button and menu
 const menuToggle = document.querySelector('.burger-toggle');
 const menu = document.querySelector('.menu');
 
-// Add a click event listener to toggle the menu visibility
+// listens to toggle
 menuToggle.addEventListener('click', () => {
-  menu.classList.toggle('active'); // Toggles 'active' class to show/hide the menu
+  menu.classList.toggle('active'); // toggles menu
+
+  // Change icon
+  if (menu.classList.contains('active')) {
+    menuToggle.innerHTML = '&#10005;'; // changes to x icon
+  } else {
+    menuToggle.innerHTML = '&#9776;'; // returns to menu icon
+  }
 });
