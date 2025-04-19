@@ -79,18 +79,15 @@
           <legend>Feedback</legend>
           <label for="subject">Subject</label>
           <select name="course" id="subject" class="inputfield">
-            <option value="DCvET">DCvET</option>
-            <option value="DCET">DCET</option>
-            <option value="DEET">DEET</option>
-            <option value="DECET">DECET</option>
-            <option value="DIT">DIT</option>
-            <option value="DMET">DMET</option>
-            <option value="DOMT">DOMT</option>
-            <option value="DRET">DRET</option></select
+            <option value="MATH">Mathematics</option>
+            <option value="SCIE">Science</option>
+            <option value="ENGL">English</option>
+            <option value="HIST">History</option>
+            <option value="PHED">Physical Education</option></select
           ><br /><br />
           <label for="star-rating">Teacher Rating</label>
           <span class="star-rating">
-            <input type="radio" name="rating" id="star5" value="5" required/>
+            <input type="radio" name="rating" id="star5" value="5" required />
             <label for="star5" title="5 stars">★</label>
             <input type="radio" name="rating" id="star4" value="4" />
             <label for="star4" title="4 stars">★</label>
@@ -119,8 +116,11 @@
             class="inputfield"
             placeholder="(Optional)"
           ></textarea>
-          <br /><br>
+          <br /><br />
         </fieldset>
+        <div class="btn-submit" id="btnSubmit">
+          Submit
+        </div>
       </form>
     </main>
     <footer>
