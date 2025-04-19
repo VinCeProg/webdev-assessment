@@ -19,7 +19,6 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
   padding-top: 8vh;
 }
 
@@ -121,9 +120,14 @@ footer a:hover {
 
   form {
     flex-direction: column;
+    padding: 1%;
   }
 
-  .star-rating {
-    width: 80%;
+  .student-info {
+    width: 90%;
+  }
+
+  .star-rating label{
+    font-size: 1em;
   }
 }

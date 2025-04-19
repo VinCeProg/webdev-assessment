@@ -4,8 +4,8 @@
 }
 
 form {
-  background-color: var(--chalk-white);
-  color: var(--chalk-gray);
+  /* background-color: var(--chalk-white); */
+  color: var(--chalk-white);
   margin: 2rem 2.5%;
   padding: 2rem 2.5%;
   display: flex;
@@ -19,8 +19,13 @@ fieldset {
   margin: 0 auto;
   margin-bottom: 1rem;
   padding: 1rem 2.5%;
-  border: 3px solid var(--chalk-gray);
+  border: 3px solid var(--chalk-white);
+  border-radius: 10px;
   width: 90%;
+
+  /* testing layout for fieldset */
+  /* display: flex;
+  flex-direction: column; */
 }
 
 legend {
@@ -47,11 +52,12 @@ label {
 }
 
 .star-rating {
-  width: 80%;
+  width: 90%;
   margin: 0 1rem;
+  padding: 0.5rem;
   display: flex;
   flex-direction: row-reverse;
-  justify-content:center;
+  justify-content: center;
 }
 
 .star-rating input[type="radio"] {
@@ -59,7 +65,7 @@ label {
 }
 
 .star-rating label {
-  font-size: 2rem;
+  font-size: 2em;
   color: #ccc;
   cursor: pointer;
   transition: color 0.2s;
