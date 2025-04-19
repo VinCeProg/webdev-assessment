@@ -1,0 +1,26 @@
+:root {
+  --chalk-white: #fffae3;
+  --chalk-gray: #2d2d2d;
+}
+
+form {
+  background-color: var(--chalk-white);
+  color: var(--chalk-gray);
+  margin: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+fieldset {
+  padding: 3rem;
+}
+
+legend {
+  
+}
+
+.inputfield{
+  margin: 0 1rem;
+  padding: 1rem;
+  width: 95%;
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SCFS | Forms</title>
     <!-- CSS IMPORTS -->
+    <link rel="stylesheet" href="../css/form.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
     <link rel="stylesheet" href="../css/styles.css" />
     <!-- ICON -->
@@ -40,10 +41,33 @@
       <form>
         <fieldset>
           <legend>Student Information</legend>
-          <label for="fullName">Full Name:</label><br />
-          <input class="inputfield" type="text" id="fullName" name="fullName" placeholder="Spongebob Squarepants"/><br /><br />
-          <label for="grade-section">Grade & Section:</label><br>
-          <input class="inputfield" type="select">
+          <label for="fullName">Full Name:</label>
+          <input
+            class="inputfield"
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Spongebob Squarepants"
+          /><br /><br />
+          <label for="course">Course</label><br />
+          <select name="course" id="course" class="inputfield">
+            <option value="DCvET">DCvET</option>
+            <option value="DCET">DCET</option>
+            <option value="DEET">DEET</option>
+            <option value="DECET">DECET</option>
+            <option value="DIT">DIT</option>
+            <option value="DMET">DMET</option>
+            <option value="DOMT">DOMT</option>
+            <option value="DRET">DRET</option>
+          </select><br><br>
+          <label for="course">Year & Section:</label><br />
+          <input
+            type="text"
+            class="inputfield"
+            id="year-section"
+            name="year-section"
+            placeholder="2-1"
+          />
         </fieldset>
       </form>
     </main>
