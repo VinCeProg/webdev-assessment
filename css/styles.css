@@ -9,7 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 2px solid magenta; */
+  border: 2px solid magenta;
 }
 
 body {
@@ -59,7 +59,7 @@ footer a:hover {
 }
 
 /* Responsive Menu */
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   body {
     background-attachment: scroll;
   }
@@ -116,19 +116,5 @@ footer a:hover {
 
   .container button {
     width: 100%;
-  }
-
-  form {
-    flex-direction: column;
-    align-items: center;
-    padding: 1%;
-  }
-
-  .student-info {
-    width: 90%;
-  }
-
-  .star-rating label{
-    font-size: 1em;
   }
 }
