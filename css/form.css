@@ -111,7 +111,26 @@ label {
   transition: 0.3s ease;
 }
 
+.student-info input[type="checkbox"] {
+  margin-left: 1.2em;
+  width: 20px;
+  height: 20px;
+  background-color: var(--chalk-white);
+}
 
+.student-info input[type="checkbox"]:checked {
+  background-color: gold;
+}
+
+.chkbxlbl {
+  font-size: 1em;
+}
+
+.chkbxlbl:hover {
+  color: gold;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
 
 
 
