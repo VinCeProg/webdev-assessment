@@ -85,10 +85,10 @@
             <option value="DIT">DIT</option>
             <option value="DMET">DMET</option>
             <option value="DOMT">DOMT</option>
-            <option value="DRET">DRET</option></select
-          ><br /><br />
+            <option value="DRET">DRET</option>
+            </select><br /><br />
           <label for="rating">Teacher Rating</label><br />
-          <div class="star-rating">
+          <span class="star-rating">
             <input type="radio" name="rating" id="star5" value="5" />
             <label for="star5" title="5 stars">★</label>
             <input type="radio" name="rating" id="star4" value="4" />
@@ -99,7 +99,7 @@
             <label for="star2" title="2 stars">★</label>
             <input type="radio" name="rating" id="star1" value="1" />
             <label for="star1" title="1 stars">★</label>
-          </div>
+          </span>
           <br />
           <label for="fav-lesson">Favorite Lesson</label><br />
           <input
@@ -111,7 +111,11 @@
             placeholder="HTML, CSS, Javascript"
           /><br /><br />
           <label for="suggestion">Suggestion for Improvements</label><br />
-          <textarea name="suggestion" id="suggestion" class="inputfield"></textarea>
+          <textarea
+            name="suggestion"
+            id="suggestion"
+            class="inputfield"
+          ></textarea>
         </fieldset>
       </form>
     </main>
