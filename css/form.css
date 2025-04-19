@@ -3,13 +3,21 @@
   --chalk-gray: #2d2d2d;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
 form {
   color: var(--chalk-white);
+  width: 100%;
   margin: 2rem 2.5%;
   padding: 2rem 2.5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows:  1fr;
+  grid-template-rows: 1fr;
 }
 
 fieldset {
@@ -19,6 +27,11 @@ fieldset {
   border: 5px solid var(--chalk-white);
   border-radius: 10px;
   width: 90%;
+}
+
+fieldset:hover {
+  transform: scale(1.01);
+  transition: 0.4s ease-in-out;
 }
 
 legend {
@@ -58,7 +71,7 @@ label {
 }
 
 .star-rating label {
-  font-size: 2em;
+  font-size: 3em;
   color: #ccc;
   cursor: pointer;
   transition: color 0.2s;
@@ -77,6 +90,7 @@ label {
 }
 
 .btn-submit {
+  grid-area: b;
   width: 30%;
   height: 2.2em;
   background-color: var(--chalk-white);
@@ -97,9 +111,14 @@ label {
   transition: 0.3s ease;
 }
 
-@media (max-width:960px) {
-  
+
+
+
+
+
+@media (max-width: 960px) {
   form {
+    width: 80%;
     grid-template-columns: 1fr;
     grid-template-columns: repeat(1fr);
   }
@@ -108,7 +127,23 @@ label {
     width: 90%;
   }
 
-  .star-rating label{
+  .star-rating label {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .star-rating label {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+
+  .star-rating label {
     font-size: 1em;
   }
 }
