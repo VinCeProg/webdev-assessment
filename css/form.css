@@ -6,21 +6,73 @@
 form {
   background-color: var(--chalk-white);
   color: var(--chalk-gray);
-  margin: 2rem;
-  padding: 2rem;
-  text-align: center;
+  margin: 2rem 2.5%;
+  padding: 2rem 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
 }
 
 fieldset {
-  padding: 3rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  padding: 1rem 2.5%;
+  border: 3px solid var(--chalk-gray);
+  width: 90%;
 }
 
 legend {
-  
+  text-align: center;
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 0 1rem;
 }
 
-.inputfield{
+label {
+  font-family: "Pangolin", cursive;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  margin: 0 20px;
+}
+
+.inputfield {
+  font-family: "Pangolin", cursive;
+  font-size: 1.2rem;
   margin: 0 1rem;
-  padding: 1rem;
-  width: 95%;
+  padding: 0.5rem 0.7rem;
+  width: 90%;
+}
+
+.star-rating {
+  width: 80%;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:center;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 2rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+  color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: gold;
+  opacity: 0.9;
+  transform: scale(1.2);
+  transition: 0.5s ease;
 }

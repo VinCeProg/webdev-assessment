@@ -39,15 +39,17 @@
     </header>
     <main>
       <form>
-        <fieldset>
+        <fieldset class="student-info">
           <legend>Student Information</legend>
-          <label for="fullName">Full Name:</label>
+          <label for="fullName">Full Name</label>
           <input
             class="inputfield"
             type="text"
             id="fullName"
             name="fullName"
             placeholder="Spongebob Squarepants"
+            min="10"
+            max="64"
           /><br /><br />
           <label for="course">Course</label><br />
           <select name="course" id="course" class="inputfield">
@@ -58,22 +60,65 @@
             <option value="DIT">DIT</option>
             <option value="DMET">DMET</option>
             <option value="DOMT">DOMT</option>
-            <option value="DRET">DRET</option>
-          </select><br><br>
-          <label for="course">Year & Section:</label><br />
+            <option value="DRET">DRET</option></select
+          ><br /><br />
+          <label for="course">Year & Section</label><br />
           <input
             type="text"
             class="inputfield"
             id="year-section"
             name="year-section"
             placeholder="2-1"
+            pattern="\d{1}-\d{1}"
           />
+          <input type="submit" />
+        </fieldset>
+
+        <fieldset class="feedback">
+          <legend>Feedback</legend>
+          <label for="subject">Subject</label>
+          <select name="course" id="subject" class="inputfield">
+            <option value="DCvET">DCvET</option>
+            <option value="DCET">DCET</option>
+            <option value="DEET">DEET</option>
+            <option value="DECET">DECET</option>
+            <option value="DIT">DIT</option>
+            <option value="DMET">DMET</option>
+            <option value="DOMT">DOMT</option>
+            <option value="DRET">DRET</option></select
+          ><br /><br />
+          <label for="rating">Teacher Rating</label><br />
+          <div class="star-rating">
+            <input type="radio" name="rating" id="star5" value="5" />
+            <label for="star5" title="5 stars">★</label>
+            <input type="radio" name="rating" id="star4" value="4" />
+            <label for="star4" title="4 stars">★</label>
+            <input type="radio" name="rating" id="star3" value="3" />
+            <label for="star3" title="3 stars">★</label>
+            <input type="radio" name="rating" id="star2" value="2" />
+            <label for="star2" title="2 stars">★</label>
+            <input type="radio" name="rating" id="star1" value="1" />
+            <label for="star1" title="1 stars">★</label>
+          </div>
+          <br />
+          <label for="fav-lesson">Favorite Lesson</label><br />
+          <input
+            type="text"
+            class="inputfield"
+            max="32"
+            id="fav-lesson"
+            name="fav-lesson"
+            placeholder="HTML, CSS, Javascript"
+          /><br /><br />
+          <label for="suggestion">Suggestion for Improvements</label><br />
+          <textarea name="suggestion" id="suggestion" class="inputfield"></textarea>
         </fieldset>
       </form>
     </main>
     <footer>
-      &copy; 2025 TEAM 9 - Web Development
-      <span> | <a href="mailto:team9@example.com">Email Us</a></span>
+      <p>&copy; 2025 TEAM 9 - DIT 2-1</p>
+      <p>Crafted with passion for Web Development</p>
+      <p><a href="mailto:team9@example.com">Contact Us via Email</a></p>
     </footer>
     <script src="../scripts/app.js"></script>
   </body>
