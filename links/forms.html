@@ -50,6 +50,7 @@
             placeholder="Spongebob Squarepants"
             min="10"
             max="64"
+            required
           /><br /><br />
           <label for="course">Course</label><br />
           <select name="course" id="course" class="inputfield">
@@ -70,6 +71,7 @@
             name="year-section"
             placeholder="2-1"
             pattern="\d{1}-\d{1}"
+            required
           />
         </fieldset>
 
@@ -88,7 +90,7 @@
           ><br /><br />
           <label for="star-rating">Teacher Rating</label>
           <span class="star-rating">
-            <input type="radio" name="rating" id="star5" value="5" />
+            <input type="radio" name="rating" id="star5" value="5" required/>
             <label for="star5" title="5 stars">★</label>
             <input type="radio" name="rating" id="star4" value="4" />
             <label for="star4" title="4 stars">★</label>
@@ -108,12 +110,14 @@
             id="fav-lesson"
             name="fav-lesson"
             placeholder="HTML, CSS, Javascript"
+            required
           /><br /><br />
           <label for="suggestion">Suggestion for Improvements</label><br />
           <textarea
             name="suggestion"
             id="suggestion"
             class="inputfield"
+            placeholder="(Optional)"
           ></textarea>
           <br /><br>
         </fieldset>
