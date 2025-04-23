@@ -89,28 +89,6 @@ label {
   transition: 0.5s ease;
 }
 
-.btn-submit {
-  grid-area: b;
-  width: 30%;
-  height: 2.2em;
-  background-color: var(--chalk-white);
-  color: var(--chalk-gray);
-  border-radius: 50rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Pangolin", cursive;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.btn-submit:hover {
-  cursor: pointer;
-  background-color: gold;
-  transform: scale(1.1);
-  transition: 0.3s ease;
-}
-
 .student-info input[type="checkbox"] {
   margin-left: 1.2em;
   width: 20px;
@@ -132,7 +110,71 @@ label {
   transition: 0.3s ease;
 }
 
+/* POPOVER */
+.confirm-msg {
+  margin: auto;
+  padding: 1.5rem 2rem;
+  font-family: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 15px;
+}
 
+.confirm-msg h1, p{
+  text-align: center;
+  font-family: "Pangolin", cursive;
+}
+
+.confirm-msg p {
+  font-size: 1.2rem;
+}
+
+.btnWrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+}
+
+.btn {
+  width: 100%;
+  height: 2.2em;
+  padding: 1rem 2rem;
+  background-color: var(--chalk-white);
+  color: var(--chalk-gray);
+  border-radius: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+
+.close:hover {
+  background-color: #d93a3a;
+  color: var(--chalk-white);
+}
+
+.submit:hover {
+  background-color: gold;
+}
+
+.formbtn {
+  width: 30%;
+}
+
+#pover-confirm:not(:popover-open) {
+  display: none;
+}
 
 
 @media (max-width: 960px) {

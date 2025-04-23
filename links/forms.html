@@ -132,7 +132,17 @@
           <br /><br />
         </fieldset>
       </form>
-      <button class="btn-submit" id="btnSubmit">Submit</button>
+      <!-- Confirmation Message -->
+      <button class="btn submit formbtn" popovertarget="pover-confirm">Submit</button>
+      <div popover id="pover-confirm" class="confirm-msg">
+        <h1>Confirm Submission?</h1>
+        <p>Are you sure you want to submit your feedback?</p>
+        <p>You won't be able to change this once submitted.</p>
+        <div class="btnWrapper">
+          <button class="btn close" popovertarget="pover-confirm">Close</button>
+          <button class="btn submit" id="submitButton">Submit</button>
+        </div>
+      </div>
     </main>
     <footer>
       <p>&copy; 2025 TEAM 9 - DIT 2-1</p>
