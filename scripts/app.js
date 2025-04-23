@@ -14,9 +14,3 @@ menuToggle.addEventListener('click', () => {
     menuToggle.innerHTML = '&#9776;'; // returns to menu icon
   }
 });
-
-const btnSubmit = document.getElementById('btnSubmit');
-btnSubmit.addEventListener('click', () => {
-  alert("Feedback Submitted");
-  // add popover here
-});
