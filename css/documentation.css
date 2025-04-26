@@ -1,0 +1,46 @@
+:root {
+  --chalk-white: #fffae3;
+  --chalk-gray: #2d2d2d;
+}
+
+section{
+  padding: 45px 0;
+}
+
+.about-text{
+  color: black;
+  text-align: center;
+  margin-top:650px;
+  background-color: #fffae3;
+}
+
+.about-text h1{
+  font-size: 54px;
+  font-family: "Pangolin", cursive;
+  margin: 24px;
+  position: relative;
+  top: 24px;
+}
+
+.about-text p{
+  font-family: "Pangolin", cursive;
+  font-size: 30px;
+  max-width: 2024px;
+  margin: 24px auto;
+  text-align: center;
+}
+
+.about-text img{
+  width: 90%;
+  height: 90%;
+  margin-top: 20px;
+}
+
+.mission{
+  color: #fffae3;
+  font-size: 54px;
+  font-family: "Pangolin", cursive;
+  margin: 24px;
+  text-align: center;
+  margin-top:250px;
+}
