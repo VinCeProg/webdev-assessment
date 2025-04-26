@@ -48,7 +48,6 @@ main {
 .priv {
   background-color: var(--chalk-white);
   color: var(--chalk-gray);
-  padding: 2rem;
   padding: 8px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
