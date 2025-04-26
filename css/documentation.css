@@ -49,6 +49,7 @@ main {
   background-color: var(--chalk-white);
   color: var(--chalk-gray);
   padding: 2rem;
+  padding: 8px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
   transition: transform 0.3s ease;
@@ -130,7 +131,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -148,6 +149,7 @@ main {
   height: auto;
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  margin-right: 1rem;
 }
 
 /* Responsive */
@@ -184,4 +186,32 @@ main {
     max-width: 100%;
     margin-top: 1rem;
   }
+
+  
+}
+.fun-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: gold;
+  color: var(--chalk-gray);
+  font-family: var(--font-main);
+  font-size: var(--font-md);
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  margin: 2rem auto;
+}
+
+.fun-button:hover {
+  background-color: #ffdd57;
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.fun-button:active {
+  transform: scale(0.95);
 }
