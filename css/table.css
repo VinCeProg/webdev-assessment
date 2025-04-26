@@ -30,6 +30,12 @@ td {
     border: 0;
   }
 
+  th,
+  td {
+    border: 2px solid #ddd;
+
+  }
+
   table thead {
     border: none;
     clip: rect(0 0 0 0);
@@ -44,7 +50,7 @@ td {
   table tr {
     border-bottom: 3px solid #ddd;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   table td {
