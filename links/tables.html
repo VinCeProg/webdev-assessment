@@ -44,8 +44,20 @@
     <!-- MAIN CONTENT -->
     <main>
       <br />
-
-      <div class="hero">
+      <!-- FOR FILTERING TABLE -->
+      <div class="submission-table test">
+        <div class="filter-container">
+          <label for="sort">Sort by</label>
+          <select name="sort" id="sort" class="filter-items">
+            <option value="NAME">Name</option>
+            <option value="COURSE">Course</option>
+            <option value="YEAR&SEC">Year & Section</option>
+            <option value="RATING">Teacher Rating</option>
+            <option value="SUBJECT">Subject</option>
+          </select>
+          <input type="search" placeholder="Search" class="filter-items">
+          <button class="btn-filter">Filter</button>
+        </div>
         <table>
           <thead>
             <tr>

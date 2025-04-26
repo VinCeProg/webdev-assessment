@@ -1,3 +1,77 @@
+:root {
+  --chalk-white: #fffae3;
+  --chalk-gray: #2d2d2d;
+}
+
+.submission-table {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-container {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  padding: 12px;
+  margin: 8px;
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.filter-items {
+  padding: 12px;
+  margin: 12px;
+  width: 30%;
+  flex-grow: 1;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+label {
+  font-family: "Pangolin", cursive;
+  font-size: 1.2rem;
+}
+
+.btn-filter {
+  width: 10%;
+  margin: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 50rem;
+  font-family: "Pangolin", cursive;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: var(--chalk-white);
+  transform:scale(1);
+  transition: 0.3s ease;
+}
+
+.btn-filter:hover {
+  background-color: gold;
+  transform: scale(1.1);
+}
+
+input[type="search"] {
+  background-color: transparent;
+  color: #ddd;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding-left: 24px;
+}
+
+input[type="search"]:focus {
+  border-color: #ddd;
+  transform: scale(1.02);
+  transition: 0.3s ease;
+  outline-color: none;
+}
+
 table {
   width: 90vw;
   margin: 0 auto;
@@ -68,5 +142,18 @@ td {
 
   table td:last-child {
     border-bottom: 0;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-items {
+    width: 90%;
+  }
+
+  .btn-filter {
+    width: 85%;
   }
 }
