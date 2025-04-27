@@ -1,4 +1,5 @@
 :root {
+  /* Color and font variables */
   --chalk-white: #fffae3;
   --chalk-gray: #2d2d2d;
   --font-main: "Pangolin", cursive;
@@ -10,6 +11,7 @@
 }
 
 body {
+  /* Basic body settings */
   margin: 0;
   padding: 0;
   font-family: var(--font-main);
@@ -19,6 +21,7 @@ body {
 }
 
 main {
+  /* Main container styling */
   padding: 2rem 10%;
   display: flex;
   flex-direction: column;
@@ -35,17 +38,19 @@ main {
 }
 
 .hero h1 {
+  /* Hero title */
   font-size: var(--font-xl);
   color: var(--chalk-white);
   padding: 1rem 2rem;
   border-radius: 15px;
 }
 
-/* About, Mission, WTWD, Privacy */
+/* About, Mission, WTWD, Privacy sections */
 .about-text,
 .mission,
 .wtwd,
 .priv {
+  /* Card styles */
   background-color: var(--chalk-white);
   color: var(--chalk-gray);
   padding: 8px;
@@ -58,10 +63,11 @@ main {
 .mission:hover,
 .wtwd:hover,
 .priv:hover {
+  /* Card hover effect */
   transform: scale(1.02);
 }
 
-/* Headers */
+/* Section headers */
 .about-text h1,
 .mission h1,
 .wtwd h1,
@@ -73,7 +79,7 @@ main {
   font-family: var(--font-main);
 }
 
-/* Paragraphs */
+/* Section paragraphs */
 .about-text p,
 .mission p,
 .wtwd p,
@@ -86,15 +92,15 @@ main {
   font-family: var(--font-main);
 }
 
-/* Image Styling */
+/* About section image */
 .about-text img {
-  width: 100%;
+  height: .5%;
   display: block;
   margin: 2rem auto;
   border-radius: 10px;
 }
 
-/* WTWD List Styles */
+/* WTWD List styles */
 .wtwd h2 {
   margin-top: 1.5rem;
   font-size: var(--font-md);
@@ -102,6 +108,7 @@ main {
 }
 
 .wtwd ul {
+  /* List container */
   list-style: none;
   padding-left: 0;
   margin: 1rem auto;
@@ -109,6 +116,7 @@ main {
 }
 
 .wtwd ul li {
+  /* List items */
   font-size: var(--font-sm);
   background-color: var(--chalk-white);
   color: var(--chalk-gray);
@@ -121,11 +129,12 @@ main {
 }
 
 .wtwd ul li:hover {
+  /* List items hover */
   background-color: gold;
   color: var(--chalk-gray);
 }
 
-/* Mission Layout */
+/* Mission Section Layout */
 .mission {
   display: flex;
   justify-content: space-between;
@@ -135,6 +144,7 @@ main {
 }
 
 .mission-text {
+  /* Mission text block */
   flex: 1 1 60%;
   font-size: var(--font-base);
   line-height: 1.7;
@@ -143,6 +153,7 @@ main {
 }
 
 .mission img {
+  /* Mission image */
   flex: 1 1 30%;
   max-width: 15.625rem;
   height: auto;
@@ -151,16 +162,18 @@ main {
   margin-right: 1rem;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
   }
 
+  /* Main padding adjust */
   main {
     padding: 1rem;
   }
 
+  /* Section headers resize */
   .about-text h1,
   .mission h1,
   .wtwd h1,
@@ -168,10 +181,12 @@ main {
     font-size: 2rem;
   }
 
+  /* List items font resize */
   .wtwd ul li {
     font-size: 1rem;
   }
 
+  /* Mission section stacked layout */
   .mission {
     flex-direction: column-reverse;
     text-align: center;
@@ -185,9 +200,9 @@ main {
     max-width: 100%;
     margin-top: 1rem;
   }
-
-  
 }
+
+/* Fun Button */
 .fun-button {
   display: inline-block;
   padding: 1rem 2rem;
@@ -206,11 +221,13 @@ main {
 }
 
 .fun-button:hover {
+  /* Button hover effect */
   background-color: #ffdd57;
   transform: scale(1.08) rotate(-2deg);
   box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
 .fun-button:active {
+  /* Button active effect */
   transform: scale(0.95);
 }
