@@ -44,8 +44,11 @@
     <!-- MAIN CONTENT -->
     <main>
       <form>
+        <!-- Student Information Section -->
         <fieldset class="student-info">
           <legend>Student Information</legend>
+        
+          <!-- Full Name Input -->
           <label for="fullName">Full Name</label>
           <input
             class="inputfield"
@@ -57,8 +60,11 @@
             max="64"
             required
           /><br /><br />
+
+          <!-- Course Dropdown Menu -->
           <label for="course">Course</label><br />
-          <select name="course" id="course" class="inputfield">
+          <select name="course" id="course" class="inputfield" required>
+            <option value="">--COURSE--</option>
             <option value="DCvET">DCvET</option>
             <option value="DCET">DCET</option>
             <option value="DEET">DEET</option>
@@ -68,6 +74,8 @@
             <option value="DOMT">DOMT</option>
             <option value="DRET">DRET</option></select
           ><br /><br />
+
+          <!-- Year and Section Input -->
           <label for="course">Year & Section</label><br />
           <input
             type="text"
@@ -88,16 +96,22 @@
           <br />
         </fieldset>
 
+        <!-- Feedback Section -->
         <fieldset class="feedback">
           <legend>Feedback</legend>
+
+          <!-- Subject Dropdown Menu -->
           <label for="subject">Subject</label>
-          <select name="course" id="subject" class="inputfield">
+          <select name="subject" id="subject" class="inputfield" required>
+            <option value="">--SUBJECT--</option>
             <option value="MATH">Mathematics</option>
             <option value="SCIE">Science</option>
             <option value="ENGL">English</option>
             <option value="HIST">History</option>
             <option value="PHED">Physical Education</option></select
           ><br /><br />
+
+          <!-- Star Rating for Teacher -->
           <label for="star-rating">Teacher Rating</label>
           <span class="star-rating">
             <input type="radio" name="rating" id="star5" value="5" required />
@@ -122,6 +136,8 @@
             placeholder="HTML, CSS, Javascript"
             required
           /><br /><br />
+
+          <!-- Suggestions Textarea (Optional) -->
           <label for="suggestion">Suggestions for Improvement?</label><br />
           <textarea
             name="suggestion"
@@ -132,6 +148,7 @@
           <br /><br />
         </fieldset>
       </form>
+
       <!-- Confirmation Message -->
       <button class="btn submit formbtn" popovertarget="pover-confirm">Submit</button>
       <div popover id="pover-confirm" class="confirm-msg">
@@ -144,6 +161,8 @@
         </div>
       </div>
     </main>
+
+    <!-- FOOTER -->
     <footer>
       <p>&copy; 2025 TEAM 9 - DIT 2-1</p>
       <p>Crafted with passion for Web Development</p>
