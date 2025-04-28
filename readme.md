@@ -9,8 +9,8 @@ The **School Classroom Feedback Survey (SCFS)** is a web-based application desig
 1. [Features](#features)
 2. [Technologies Used](#technologies-used)
 3. [Project Structure](#project-structure)
-3. [Contributors](#contributors)
-4. [How to Run](#how-to-run)
+4. [Contributors](#contributors)
+5. [How to Run](#how-to-run)
 
 ---
 
@@ -34,6 +34,7 @@ The **School Classroom Feedback Survey (SCFS)** is a web-based application desig
 
 ## Project Structure
 
+```
 webdev-assessment/
 ├── css/
 │ ├── navbar.css
@@ -42,9 +43,9 @@ webdev-assessment/
 │ ├── styles.css
 ├── img/
 │ ├── team9-logo-2.png
-│ ├── contact-form.png 
-│ ├── table.png 
-│ ├── documents.png 
+│ ├── contact-form.png
+│ ├── table.png
+│ ├── documents.png
 ├── links/
 │ ├── forms.html
 │ ├── tables.html
@@ -53,6 +54,7 @@ webdev-assessment/
 │ ├── app.js
 ├── index.html
 └── README.md
+```
 
 ---
 
@@ -68,4 +70,3 @@ webdev-assessment/
 
 1. Clone the repository: `git clone https://github.com/VinCeProg/webdev-assessment.git`
 2. Open `index.html` in your browser.
-
