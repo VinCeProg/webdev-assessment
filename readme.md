@@ -8,6 +8,7 @@ The **School Classroom Feedback Survey (SCFS)** is a web-based application desig
 
 1. [Features](#features)
 2. [Technologies Used](#technologies-used)
+3. [Project Structure](#project-structure)
 3. [Contributors](#contributors)
 4. [How to Run](#how-to-run)
 
@@ -15,11 +16,10 @@ The **School Classroom Feedback Survey (SCFS)** is a web-based application desig
 
 ## Features
 
-- Responsive design for all devices
-- Interactive user interface
-- Optimized performance
-- Cross-browser compatibility
-- Modular and scalable codebase
+1. **Student Feedback Form**: A form where students can submit their feedback.
+2. **Feedback Table**: A table displaying all submitted feedback for teachers to review.
+3. **Documentation Page**: A page showcasing the design process and project documentation.
+4. **Responsive Design**: Fully responsive layout for mobile and desktop devices.
 
 ---
 
