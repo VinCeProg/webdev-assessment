@@ -58,8 +58,9 @@ webdev-assessment/
 
 ## Contributors
 
-- **[Your Name]** - Developer
-- **[Contributor Name]** - [Role]
+- **[Vincent C. Cañanes]** - Developer
+- **[Mark Von Rainard Lasquity]** - Developer
+- **[Emmanuel John A. Umali]** - Developer
 
 ---
 
